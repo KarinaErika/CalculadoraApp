@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:id="@+id/gridLayout3"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:text="4"
+            tools:layout_editor_absoluteX="-72dp"
+            tools:layout_editor_absoluteY="178dp"
+            android:onClick="clicaBotao" />
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="5"
+            tools:layout_editor_absoluteX="-77dp"
+            tools:layout_editor_absoluteY="180dp"
+            android:onClick="clicaBotao"/>
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:text="1"
+            android:onClick="clicaBotao" />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="2"
+            android:onClick="clicaBotao" />
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="3"
+            android:onClick="clicaBotao" />
+        <Button
+            android:id="@+id/btnSoma"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#f3e819"
+            android:text="+"
+            android:onClick="clicaBotao" />
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:text="0"
+            android:onClick="clicaBotao" />
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:text="6"
+            android:onClick="clicaBotao" />
+        <Button
+            android:id="@+id/btnSubtrai"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#f3e819"
+            android:text="-"
+            android:onClick="clicaBotao" />
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="7"
+            android:onClick="clicaBotao" />
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="8"
+            android:onClick="clicaBotao" />
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="9"
+            android:onClick="clicaBotao" />
+        <Button
+            android:id="@+id/btnMultiplica"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#f3e819"
+            android:text="X"
+            android:onClick="clicaBotao" />
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:background="#6aa4e6"
+            android:text="Clear"
+            android:onClick="clicaBotao"/>
+        <Button
+            android:id="@+id/btnIgual"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="3"
+            android:layout_row="4"
+            android:background="#6aa4e6"
+            android:text="="
+            tools:layout_editor_absoluteX="-82dp"
+            tools:layout_editor_absoluteY="64dp"
+            android:onClick="clicaBotao"/>
+        <Button
+            android:id="@+id/btnPonto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="2"
+            android:layout_row="4"
+            android:text="."
+            tools:layout_editor_absoluteX="-115dp"
+            tools:layout_editor_absoluteY="329dp"
+            android:onClick="clicaBotao"/>
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="3"
+            android:layout_row="0"
+            android:background="#f3e819"
+            android:onClick="clicaBotao"
+            android:text="/" />
+    </GridLayout>
+    <TextView
+        android:id="@+id/campoResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="40dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout3"
+        app:layout_constraintRight_toRightOf="@+id/gridLayout3" />
+</android.support.constraint.ConstraintLayout>
+
